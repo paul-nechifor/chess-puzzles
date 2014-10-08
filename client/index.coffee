@@ -128,7 +128,7 @@ class HtmlBoard
         else
           square.addClass 'bs'
         do (x, y) =>
-          square.mousedown @page.onSelected x, y
+          square.mousedown => @page.onSelected x, y
         @elem.append square
         row.push square
       @matrix.push row
@@ -185,6 +185,19 @@ class Puzzle
         nr = 0
         @matrix[(k / 8) | 0][k % 8] = encoding.charAt c
         k++
+
+    # White always moves, but sometimes the start and end positions are
+    # reversed. Check if the start piece is white, if not, reverse the
+    # start and end positions.
+    sPiece = @matrix[@sy][@sx]
+    if sPiece is null or sPiece.charCodeAt(0) >= 97
+      tmp = @sx
+      @sx = @tx
+      @tx = tmp
+      tmp = @sy
+      @sy = @ty
+      @ty = tmp
+
     return
 
 $(document).ready main
