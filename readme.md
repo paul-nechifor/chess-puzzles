@@ -6,20 +6,15 @@ Chess puzzles web app.
 
 ## Usage
 
-Install the dependencies:
+Clone this repo. Build and run it by typing:
 
-    npm install
+    npm run up
 
-Build it with `intercessor` in `./build`:
-
-    npm run build
-
-Start it:
-
-    npm run start
-
-See it at [localhost:3000](http://localhost:3000).
+Go to [localhost:3000](http://localhost:3000) to see it. See other [supported
+commands][sc].
 
 ## License
 
 MIT
+
+[sc]: https://github.com/paul-nechifor/intercessor#supported-commands

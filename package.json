@@ -4,7 +4,8 @@
   "author": "Paul Nechifor <paul@nechifor.net> (http://nechifor.net/)",
   "scripts": {
     "build": "intercessor",
-    "start": "node build/app.js"
+    "start": "node build/app.js",
+    "up": "npm install && npm run build && npm run start"
   },
   "dependencies": {
     "intercessor": ">=0.3.2"
