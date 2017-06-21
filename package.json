@@ -1,6 +1,6 @@
 {
   "name": "chess-puzzles",
-  "version": "0.1.0",
+  "version": "1.0.0",
   "description": "Chess puzzles web app.",
   "devDependencies": {
     "babel-core": "^6.25.0",
