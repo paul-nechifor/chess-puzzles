@@ -6,7 +6,12 @@ html(lang='en')
     title Chess Puzzles
     meta(name='viewport', content='width=device-width, initial-scale=1')
     link(rel='apple-touch-icon', href='/favicon152.png')
+    meta(name='description' content='Try playing many simple chess puzzles.')
     style: :stylus(compress=true)
+      .footer small
+        color #999
+        a
+          color #aaa
       body
         font-size 1.2em
         line-height 1.4
@@ -133,7 +138,11 @@ html(lang='en')
         = ' '
         button#show-btn.btn(type='button') Show solution
 
-    .footer: :markdown-it
-      Created by [Paul Nechifor](/).
+    .footer
+      :markdown-it
+        Created by [Paul Nechifor](/).
+
+      small.links: :markdown-it
+        [Home](/) • [Projects](/projects) • [Twitter](https://twitter.com/PaulNechifor)
 
     script !{js}
