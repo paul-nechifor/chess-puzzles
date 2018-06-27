@@ -1,3 +1,7 @@
+# This repository has been moved to [gitlab.com/paul-nechifor/chess-puzzles](http://gitlab.com/paul-nechifor/chess-puzzles).
+
+Old readme:
+
 # Chess Puzzles
 
 Chess puzzles web app.
